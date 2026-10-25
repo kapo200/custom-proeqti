@@ -1,0 +1,175 @@
+/*
+Theme Name: Nexcent Full Custom Theme
+Theme URI: https://example.com/nexcent
+Author: Developer
+Author URI: https://example.com
+Description: Full custom WordPress theme for Nexcent design with ACF & Elementor integration.
+Version: 1.0.0
+Text Domain: nexcent
+*/
+
+:root {
+    --primary-color: #4CAF50;
+    --dark-text: #263238;
+    --gray-text: #717171;
+    --light-bg: #F5F7FA;
+    --white: #FFFFFF;
+    --silver: #ABBED1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    color: var(--dark-text);
+    background-color: var(--white);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.site-header {
+    background-color: var(--light-bg);
+    padding: 20px 0;
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-logo img {
+    height: 35px;
+}
+
+.main-navigation ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.main-navigation a {
+    text-decoration: none;
+    color: var(--dark-text);
+    font-weight: 500;
+}
+
+.header-btn .btn-primary {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: var(--light-bg);
+    padding: 80px 0;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-content h1 {
+    font-size: 56px;
+    line-height: 1.2;
+    color: var(--dark-text);
+    margin-bottom: 16px;
+}
+
+.hero-content h1 span {
+    color: var(--primary-color);
+}
+
+.hero-content p {
+    color: var(--gray-text);
+    margin-bottom: 32px;
+    font-size: 16px;
+}
+
+.btn-green {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 14px 32px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Clients Section */
+.clients-section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.clients-section h2 {
+    font-size: 36px;
+    color: var(--dark-text);
+}
+
+.clients-section p {
+    color: var(--gray-text);
+    margin-bottom: 30px;
+}
+
+.client-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #263238;
+    color: var(--white);
+    padding: 60px 0 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-col h4 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+    color: #F5F7FA;
+    text-decoration: none;
+}
